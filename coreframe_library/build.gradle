@@ -1,6 +1,6 @@
 apply plugin: 'com.android.library'
-//apply plugin: 'com.github.dcendents.android-maven'
-//group='com.github.qzybj'
+apply plugin: 'com.github.dcendents.android-maven'
+group='com.github.qzybj'
 
 //apply plugin: 'com.jakewharton.butterknife'//support butterknife for library project
 //apply plugin: 'com.neenbedankt.android-apt'//support butterknife for library project
