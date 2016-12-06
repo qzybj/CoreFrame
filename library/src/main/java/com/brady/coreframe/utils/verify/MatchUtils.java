@@ -14,7 +14,7 @@ public class MatchUtils {
      * @param targetCodes
      * @return true 匹配成功  false  匹配不成功
      */
-    public static boolean matchIntCode(int matchCode,int[] targetCodes){
+    public static boolean matchIntCode(int matchCode,Integer[] targetCodes){
         if(ListUtils.isNotEmpty(targetCodes)){
             for (int targetCode : targetCodes) {
                 if(matchCode ==targetCode){

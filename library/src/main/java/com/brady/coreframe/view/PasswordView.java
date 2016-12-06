@@ -11,8 +11,7 @@ import android.text.InputType;
 import android.util.AttributeSet;
 import android.view.MotionEvent;
 import android.widget.EditText;
-
-import coreframe.brady.com.coreframe.R;
+import com.brady.coreframe.R;
 
 
 /**

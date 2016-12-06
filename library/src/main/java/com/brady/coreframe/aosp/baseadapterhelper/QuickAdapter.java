@@ -20,7 +20,6 @@ import android.view.View;
 import android.view.ViewGroup;
 import java.util.ArrayList;
 import java.util.List;
-import static com.frame.fastframelibrary.aosp.baseadapterhelper.BaseAdapterHelper.get;
 
 
 /**
@@ -69,7 +68,7 @@ public abstract class QuickAdapter<T> extends BaseQuickAdapter<T, BaseAdapterHel
 
 	protected BaseAdapterHelper getAdapterHelper(int position, View convertView, ViewGroup parent){
 		if (mMultiItemSupport != null){
-			return get(
+			return BaseAdapterHelper.get(
 					context,
 					convertView,
 					parent,
@@ -77,7 +76,7 @@ public abstract class QuickAdapter<T> extends BaseQuickAdapter<T, BaseAdapterHel
 					position);
 		} else
 		{
-			return get(context, convertView, parent, layoutResId, position);
+			return BaseAdapterHelper.get(context, convertView, parent, layoutResId, position);
 		}
 	}
 
