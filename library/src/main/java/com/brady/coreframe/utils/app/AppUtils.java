@@ -13,7 +13,6 @@ import android.os.Parcelable;
 import com.brady.coreframe.FastApplication;
 import com.brady.coreframe.utils.LogUtils;
 import com.brady.coreframe.utils.dataprocess.StringUtils;
-
 import java.io.File;
 
 /** App相关工具类*/

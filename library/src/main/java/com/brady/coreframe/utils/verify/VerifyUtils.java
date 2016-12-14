@@ -27,7 +27,7 @@ public class VerifyUtils {
      * @return
      */
     public static boolean isContainEmpty(TextView... textViews) {
-        if(ListUtils.isNotEmpty(textViews)){
+        if(ListUtils.isNotEmptyArray(textViews)){
             for (TextView tv:textViews) {
                 if (verifyEmpty(tv)) {
                     return true;
@@ -42,7 +42,7 @@ public class VerifyUtils {
      * @return
      */
     public static boolean isContainEmpty(String[] strings) {
-        if(ListUtils.isNotEmpty(strings)){
+        if(ListUtils.isNotEmptyArray(strings)){
             for (String string:strings) {
                 if (verifyEmpty(string)) {
                     return true;

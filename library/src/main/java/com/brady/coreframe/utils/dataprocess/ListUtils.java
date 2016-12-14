@@ -11,18 +11,18 @@ import java.util.Set;
 
 public class ListUtils {
 
-	public static boolean isEmpty(List<?> list){
+	public static boolean isEmptyList(List<?> list){
 		if (list!=null&&list.size()>0) {
 			return false;
 		}
 		return true;
 	}
-	public static boolean isNotEmpty(List<?> list){
-		return !isEmpty(list);
+	public static boolean isNotEmptyList(List<?> list){
+		return !isEmptyList(list);
 	}
 
 	public static <T> T getData(List<T> list,int index){
-		if (!isEmpty(list)) {
+		if (!isEmptyList(list)) {
 			if (index>=0&&index<list.size()) {
 				return list.get(index);
 			}
@@ -47,19 +47,8 @@ public class ListUtils {
 		}
 		return false;
 	}
-	/**
-	 * 判断是否为空
-	 * @param objList
-	 * @return
-	 */
-	public static boolean isEmpty(Object[] objList){
-		if(objList == null ||objList.length == 0){
-			return true ;
-		}
-		return false;
-	}
-	public static boolean isNotEmpty(Object[] objList){
-		return !isEmpty(objList);
+	public static boolean isNotEmptyArray(Object[] objList){
+		return !isEmptyArray(objList);
 	}
 
 	public static boolean isEmptySet(HashSet target){

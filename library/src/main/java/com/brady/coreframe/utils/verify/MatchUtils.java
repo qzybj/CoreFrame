@@ -15,7 +15,7 @@ public class MatchUtils {
      * @return true 匹配成功  false  匹配不成功
      */
     public static boolean matchIntCode(int matchCode,Integer[] targetCodes){
-        if(ListUtils.isNotEmpty(targetCodes)){
+        if(ListUtils.isNotEmptyArray(targetCodes)){
             for (int targetCode : targetCodes) {
                 if(matchCode ==targetCode){
                     return true;
@@ -31,7 +31,7 @@ public class MatchUtils {
      * @return true 匹配成功  false  匹配不成功
      */
     public static boolean matchIntCode(String matchCode,String[] targetCodes){
-        if(StringUtils.isNotEmpty(matchCode)&&ListUtils.isNotEmpty(targetCodes)){
+        if(StringUtils.isNotEmpty(matchCode)&&ListUtils.isNotEmptyArray(targetCodes)){
             for (String targetCode : targetCodes) {
                 if(matchCode.equalsIgnoreCase(targetCode)){
                     return true;
