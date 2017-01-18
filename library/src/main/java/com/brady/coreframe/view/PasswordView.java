@@ -53,10 +53,7 @@ public class PasswordView extends EditText {
 
     private void init(AttributeSet attrs) {
         if (attrs != null) {
-            TypedArray a = getContext().getTheme().obtainStyledAttributes(
-                    attrs,
-                    R.styleable.PasswordView,
-                    0, 0);
+            TypedArray a = getContext().getTheme().obtainStyledAttributes(attrs,R.styleable.PasswordView,0, 0);
             try {
                 useStrikeThrough = a.getBoolean(R.styleable.PasswordView_useStrikeThrough, false);
             } finally {

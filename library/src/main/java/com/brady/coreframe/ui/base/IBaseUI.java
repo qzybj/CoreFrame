@@ -5,7 +5,6 @@ import android.os.Bundle;
 import android.view.View;
 
 /**
- * Created by ZhangYuanBo on 2016/8/11.
  * base UI common method
  */
 public interface IBaseUI {
