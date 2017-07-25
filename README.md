@@ -1,2 +1,2 @@
 # CoreFrame
-My first shared libriry
+App development frame libriry
