@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <!-- 字体大小按1.8换算 -->
     <dimen name="text_size_48">26.6sp</dimen>
     <dimen name="text_size_40">22.2sp</dimen>
