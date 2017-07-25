@@ -1,2 +1,2 @@
 # CoreFrame
-App development frame libriry
+App development frame library
