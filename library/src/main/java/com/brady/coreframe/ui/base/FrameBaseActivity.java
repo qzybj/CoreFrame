@@ -4,14 +4,17 @@ import android.app.Activity;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
-import com.brady.coreframe.utils.LogUtils;
-import com.brady.coreframe.utils.view.ViewUtils;
+
+import com.brady.coreframe.ui.base.i.IBaseUI;
+import com.brady.libutil.log.CLog;
+import com.brady.libutil.view.ViewUtil;
+
 import butterknife.ButterKnife;
 
 /**
  * 框架 - Activity的base基类，只包含最基本的
  */
-public abstract class FrameBaseActivity extends AppCompatActivity implements View.OnClickListener,IBaseUI{
+public abstract class FrameBaseActivity extends AppCompatActivity implements View.OnClickListener,IBaseUI {
 	private Activity mBaseActivity;
 	private View mRootView;
 
@@ -22,9 +25,9 @@ public abstract class FrameBaseActivity extends AppCompatActivity implements Vie
 		int layoutResId = getLayoutResId();
 		if (layoutResId>0) {
 			try {
-				mRootView = ViewUtils.inflateView(getBaseActivity(),layoutResId);
+				mRootView = ViewUtil.loadView(getBaseActivity(),layoutResId);
 			} catch (Exception e) {
-				LogUtils.e(e);
+				CLog.e(e);
 			}
 			if (mRootView != null) {
 				setContentView(mRootView);

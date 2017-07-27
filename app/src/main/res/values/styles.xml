@@ -8,4 +8,95 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!--  TabBottomBar - 底部Item布局样式 -->
+    <style name="style_tabbar_item_layout" parent="@style/style_common_match">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <!--  TitleBar - 标题栏底部线样式 -->
+    <style name="style_tiltebar_bottomline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_up_shadow_height</item>
+        <item name="android:background">@color/CB2B2B2</item>
+    </style>
+
+
+    <!--  Button 自定义按钮样式 -->
+    <style name="common_btn_weight" parent="style_common">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_32</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@drawable/frame_bg_dialog_button</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:singleLine">true</item>
+    </style>
+
+    <!--首页- tab按钮-->
+    <style name="style_home_tabbutton" parent="style_common">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">@dimen/px34</item>
+        <item name="android:layout_marginBottom">@dimen/px21</item>
+        <item name="android:drawablePadding">@dimen/px21</item>
+    </style>
+
+
+    <!--activity common style-->
+    <style name="style_activty_common" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:screenOrientation">portrait</item>
+        <item name="android:windowSoftInputMode">adjustPan</item>
+        <item name="android:configChanges">keyboard|keyboardHidden</item>
+    </style>
+
+    <!--  TitleBar - layout布局 -->
+    <style name="style_tiltebar_common">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/common_title_height</item>
+        <item name="android:background">@color/CFFFFFF</item>
+    </style>
+    <!--  TitleBar - 标题样式 -->
+    <style name="style_tiltebar_title" parent="@style/style_text_common">
+        <item name="android:layout_centerInParent">true</item>
+        <item name="android:textSize">@dimen/text_size_28</item>
+    </style>
+
+    <!--  TitleBar - 布局类点击样式 -->
+    <style name="style_tiltebar_layout_btn" parent="@style/style_common">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:descendantFocusability">blocksDescendants</item>
+        <item name="android:gravity">center</item>
+        <item name="android:paddingLeft">@dimen/px20</item>
+        <item name="android:paddingRight">@dimen/px20</item>
+    </style>
+
+
+    <!--  TitleBar - 底部线样式 -->
+    <style name="style_managerproduct_tabbar_bottomline">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/px5</item>
+        <item name="android:background">@android:color/white</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:layout_marginLeft">-15px</item>
+        <item name="android:layout_marginRight">-15px</item>
+    </style>
+
+    <!--  TitleBar - 返回按钮 -->
+    <style name="style_tiltebar_btn_back" parent="@style/common_btn_default">
+        <item name="android:textSize">@dimen/text_size_28</item>
+        <item name="android:textColor">@android:color/black</item>
+    </style>
 </resources>

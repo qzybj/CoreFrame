@@ -1,112 +1,61 @@
 <resources>
-    <!-- wrap_content common style -->
     <style name="style_common">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
-    <!-- matchparent common style -->
-    <style name="style_common_matchparent">
+
+    <style name="style_common_match">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <!-- singleline textview common style-->
-    <style name="style_text_common" parent="style_common" >
+    <!-- SingleLine TextView common style-->
+    <style name="style_text_common" parent="@style/style_common" >
         <item name="android:textSize">@dimen/text_size_20</item>
         <item name="android:textColor">@android:color/black</item>
         <item name="android:gravity">center</item>
         <item name="android:singleLine">true</item>
     </style>
-    <!-- multiline textview common style-->
-    <style name="style_multiline_textview_common" parent="style_text_common">
+
+    <!-- Multiline TextView common style-->
+    <style name="style_multiline_textview_common" parent="@style/style_text_common">
         <item name="android:gravity">center|left</item>
         <item name="android:singleLine">false</item>
     </style>
 
-    <!-- style_edittext_common-->
-    <style name="style_sigleline_edittext_common" parent="style_text_common">
+    <!-- Style EditText common-->
+    <style name="style_sigleline_edittext_common" parent="@style/style_text_common">
         <item name="android:ellipsize">end</item>
     </style>
 
-    <!--  line common horizontal -->
+    <!--  Line common horizontal -->
     <style name="style_line_common">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">1px</item>
         <item name="android:background">@android:color/black</item>
     </style>
-    <!--  line common vertical -->
-    <style name="style_line_common_vertical" parent="style_line_common">
+    <!--  Line common vertical -->
+    <style name="style_line_common_vertical" parent="@style/style_line_common">
         <item name="android:layout_width">1px</item>
         <item name="android:layout_height">match_parent</item>
     </style>
 
-    <!--  button 通用按钮样式 -->
-    <style name="common_btn_default" parent="style_common">
+    <!--  Button 通用按钮样式 -->
+    <style name="common_btn_default" parent="@style/style_common">
         <item name="android:textSize">@dimen/text_size_26</item>
         <item name="android:gravity">center</item>
         <item name="android:textColor">@android:color/white</item>
         <item name="android:singleLine">true</item>
     </style>
 
-    <!-- listview common style -->
-    <style name="style_listview_common" parent="style_common_matchparent">
+    <!-- ListView common style -->
+    <style name="style_listview_common" parent="@style/style_common_match">
         <item name="android:layout_height">wrap_content</item>
         <item name="android:cacheColorHint">#00000000</item>
         <item name="android:divider">@null</item>
         <item name="android:fadingEdge">none</item>
         <item name="android:listSelector">#00000000</item>
         <item name="android:fastScrollEnabled">false</item>
-    </style>
-
-    <!--activity common style-->
-    <style name="style_activty_common" parent="Theme.AppCompat.Light.NoActionBar">
-        <item name="android:screenOrientation">portrait</item>
-        <item name="android:windowSoftInputMode">adjustPan</item>
-        <item name="android:configChanges">keyboard|keyboardHidden</item>
-    </style>
-
-    <!--  titlebar - layout布局 -->
-    <style name="style_tiltebar_common">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/common_title_height</item>
-        <item name="android:background">@color/color_ffffff</item>
-    </style>
-    <!--  titlebar - 标题样式 -->
-    <style name="style_tiltebar_title" parent="style_text_common">
-        <item name="android:layout_centerInParent">true</item>
-        <item name="android:textSize">@dimen/text_size_28</item>
-    </style>
-
-    <!--  titlebar - 布局类点击样式 -->
-    <style name="style_tiltebar_layout_btn" parent="style_common">
-        <item name="android:layout_height">match_parent</item>
-        <item name="android:descendantFocusability">blocksDescendants</item>
-        <item name="android:gravity">center</item>
-        <item name="android:paddingLeft">@dimen/w20dip</item>
-        <item name="android:paddingRight">@dimen/w20dip</item>
-    </style>
-
-    <!--  titlebar - 底部线样式 -->
-    <style name="style_tiltebar_bottomline">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/common_up_shadow_height</item>
-        <item name="android:background">@color/color_b2b2b2</item>
-    </style>
-
-    <!--  titlebar - 底部线样式 -->
-    <style name="style_managerproduct_tabbar_bottomline">
-        <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">@dimen/h5dip</item>
-        <item name="android:background">@android:color/white</item>
-        <item name="android:layout_alignParentBottom">true</item>
-        <item name="android:layout_marginLeft">-15px</item>
-        <item name="android:layout_marginRight">-15px</item>
-    </style>
-
-    <!--  titlebar - 返回按钮 -->
-    <style name="style_tiltebar_btn_back" parent="@style/common_btn_default">
-        <item name="android:textSize">@dimen/text_size_28</item>
-        <item name="android:textColor">@android:color/black</item>
     </style>
 
 </resources>

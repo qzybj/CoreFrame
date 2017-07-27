@@ -7,13 +7,15 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import com.brady.coreframe.utils.LogUtils;
+
+import com.brady.coreframe.ui.base.i.IBaseUI;
+import com.brady.libutil.log.CLog;
 import butterknife.ButterKnife;
 
 /**
  * 框架 - Fragment的base基类，只包含最基本的
  */
-public abstract class FrameBaseFragment extends Fragment implements IBaseUI{
+public abstract class FrameBaseFragment extends Fragment implements IBaseUI {
     protected Activity mParentActivity;
     private View mRootView ;
 
@@ -30,7 +32,7 @@ public abstract class FrameBaseFragment extends Fragment implements IBaseUI{
             try {
                 mRootView  = inflater.inflate(layoutResId, container, false);
             } catch (Exception e) {
-                LogUtils.e(e);
+                CLog.e(e);
             }
             if (mRootView != null) {
                 ButterKnife.bind(this, mRootView);

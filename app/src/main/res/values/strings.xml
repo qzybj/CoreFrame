@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">app</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="prompt">提示</string>
+    <string name="prompt_exit">确认退出应用？</string>
 </resources>
