@@ -13,7 +13,7 @@
         android:id="@+id/webview_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent" >
-        <com.brady.appframe.module.webview.view.PullToRefreshCWebView
+        <com.brady.corelib.module.webview.view.PullToRefreshCWebView
             xmlns:ptr="http://schemas.android.com/apk/res-auto"
             android:id="@+id/webview_pull2refresh"
             android:layout_width="match_parent"

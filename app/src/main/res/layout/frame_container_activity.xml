@@ -5,14 +5,14 @@
 
     <fragment
         android:id="@+id/frame_fragment_titlebar"
-        android:name="com.brady.corelib.fragment.bar.TitleBarFragment"
+        android:name="com.brady.corelib.module.fragmentbar.TitleBarFragment"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_alignParentTop="true" />
 
     <fragment
         android:id="@+id/frame_fragment_tabbar"
-        android:name="com.brady.corelib.fragment.bar.TabBarFragment"
+        android:name="com.brady.corelib.module.fragmentbar.TabBarFragment"
         android:layout_width="match_parent"
         android:layout_height="45dp"
         android:layout_alignParentBottom="true" />
